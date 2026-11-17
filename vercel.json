@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm run migrate && pnpm run build",
+  "crons": [{ "path": "/api/cron/tick", "schedule": "0 14 * * *" }],
+  "functions": {
+    "app/api/**/*": { "maxDuration": 300 },
+    "app/**/*": { "maxDuration": 300 }
+  }
+}
