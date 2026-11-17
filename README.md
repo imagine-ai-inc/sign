@@ -4,10 +4,9 @@ A full DocuSign-style e-signature tool that we built and use every day at [Imagi
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fimagine-ai-inc%2Fsign&project-name=imagine-sign&repository-name=imagine-sign&env=OWNER_EMAIL,RESEND_API_KEY,EMAIL_FROM_ADDRESS,TOKEN_PEPPER,CRON_SECRET&envDescription=OWNER_EMAIL%20is%20your%20login%20(first%20login%20creates%20the%20workspace).%20RESEND_API_KEY%20%2B%20EMAIL_FROM_ADDRESS%20(on%20a%20verified%20Resend%20domain)%20send%20login%20codes%20and%20signing%20emails.%20TOKEN_PEPPER%20and%20CRON_SECRET%3A%20any%20long%20random%20strings%20(openssl%20rand%20-hex%2032).&envLink=https%3A%2F%2Fgithub.com%2Fimagine-ai-inc%2Fsign%23environment-variables&stores=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22supabase%22%2C%22productSlug%22%3A%22supabase%22%2C%22protocol%22%3A%22storage%22%7D%5D)
 
-| Home | Field tagger | Signer view | Certificate |
-| --- | --- | --- | --- |
+| Signing | Verify |
+| --- | --- |
 | ![Signing](docs/screenshots/signing.png) | ![Verify](docs/screenshots/verify.png) |
-|-|-|
 | ![Features](docs/screenshots/features.png) | ![Completed](docs/screenshots/envelope.png) |
 
 ## Features
