@@ -14,7 +14,7 @@ async function fetchPdf(raw: string, index: number): Promise<{ bytes: Uint8Array
     if (!isFetchableUrl(url)) throw new ApiError("invalid_document_url", `documents[${index}].url must be a public https URL`, 400);
     let res: Response;
     try {
-      res = await fetch(url, { redirect: "manual", signal: AbortSignal.timeout(20_000), headers: { "User-Agent": "ImagineSign/1.0 (self-hosted; +https://github.com/imagine-ai-inc/imagine-sign)", Accept: "application/pdf,*/*" } });
+      res = await fetch(url, { redirect: "manual", signal: AbortSignal.timeout(20_000), headers: { "User-Agent": "ImagineSign/1.0 (self-hosted; +https://github.com/imagine-ai-inc/sign)", Accept: "application/pdf,*/*" } });
     } catch (e) {
       throw new ApiError("document_fetch_failed", `Couldn't download documents[${index}].url: ${e instanceof Error ? e.message : "network error"}`, 422);
     }
